@@ -4,11 +4,10 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-layaout-page',
   templateUrl: './layaout-page.component.html',
 })
-export class LayaoutPageComponent implements OnInit {
+export class LayaoutPageComponent{
 
   constructor() { }
 
-  ngOnInit() {
-  }
+
 
 }
