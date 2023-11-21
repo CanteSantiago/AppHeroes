@@ -1,13 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-hero-page',
-  templateUrl: './hero-page.component.html'})
-export class HeroPageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+  templateUrl: './hero-page.component.html',
+  styles: [
+  ]
+})
+export class HeroPageComponent {
 
 }

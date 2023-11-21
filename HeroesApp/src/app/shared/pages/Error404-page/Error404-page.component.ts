@@ -1,13 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-Error404-page',
-  templateUrl: './Error404-page.component.html',
+  selector: 'app-error404-page',
+  templateUrl: './error404-page.component.html',
+  styles: [
+  ]
 })
-export class Error404PageComponent  {
-
-  constructor() { }
-
-
+export class Error404PageComponent {
 
 }

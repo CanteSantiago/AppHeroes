@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Error404PageComponent } from './pages/Error404-page/Error404-page.component';
+import { Error404PageComponent } from './pages/error404-page/error404-page.component';
+
+
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
   declarations: [
     Error404PageComponent
   ],
-  exports:[
+  exports: [
     Error404PageComponent
   ]
 })

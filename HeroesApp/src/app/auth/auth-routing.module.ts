@@ -1,18 +1,27 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { LayaoutPageComponent } from './pages/layaout-page/layaout-page.component';
+import { Routes, RouterModule } from '@angular/router';
+import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
 
-const Routes:Routes=[
+// localhost:4200/auth/
+const routes: Routes = [
   {
     path: '',
-    component: LayaoutPageComponent,
-
+    component: LayoutPageComponent,
+    children: [
+      { path: 'login', component: LoginPageComponent },
+      { path: 'new-account', component: RegisterPageComponent },
+      { path: '**', redirectTo: 'login' },
+    ]
   }
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(Routes)],
-  exports: [RouterModule],
 
+
+
+@NgModule({
+  imports: [ RouterModule.forChild( routes ) ],
+  exports: [ RouterModule ],
 })
-export class AuthRoutingeModule { }
+export class AuthRoutingModule { }

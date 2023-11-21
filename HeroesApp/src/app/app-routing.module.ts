@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule} from '@angular/router';
-import { Error404PageComponent } from './shared/pages/Error404-page/Error404-page.component';
+import { RouterModule, Routes } from '@angular/router';
+import { Error404PageComponent } from './shared/pages/error404-page/error404-page.component';
 
+// dominio.com/
 const routes: Routes = [
   {
     path: 'auth',
@@ -28,7 +29,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
