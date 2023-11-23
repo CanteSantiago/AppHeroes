@@ -63,7 +63,7 @@
             <mat-select
              required
 formControlName="publisher"
-             formControlName="superhero"
+
              >
               <mat-option *ngFor="let publisher of publishers"
                 [value]="publisher.id">
@@ -110,10 +110,13 @@ formControlName="publisher"
   <div class="col-12 sm:col-6">
 
     <mat-card>
-      <img src="" alt="imagen del héroe" mat-card-image>
+      <img [src]="currentHero | heroImage" alt="imagen del héroe" mat-card-image>
     </mat-card>
 
   </div>
 </form>
 
+<pre>
+  {{currentHero | json}}
 
+</pre>
