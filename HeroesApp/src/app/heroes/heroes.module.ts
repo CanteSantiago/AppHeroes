@@ -29,6 +29,7 @@ HeroImagePipe
     ReactiveFormsModule,
     HeroesRoutingModule,
     MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class HeroesModule { }
